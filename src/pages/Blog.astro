@@ -1,0 +1,25 @@
+---
+import MainLayout from '../layouts/main.astro';
+import SideNav from '../pages/SideNav.astro';
+import Post from '../pages/Post.astro';
+
+{/*fetch blog -->
+for ( blogType blog in blogs) => { -->
+    props.map((blogs) => ( -->
+        <Card class="flex h-40 bg-sky-50"> -->
+            <CardHeader> -->
+                <CardTitle>{blogs.title}</CardTitle> -->
+                <CardDescription> --> 
+                    {blogs.content} -->
+                </CardDescription> -->
+            </CardHeader> -->
+        </Card> -->
+    )) -->
+};
+*/}
+---
+
+<MainLayout title="Astro + TailwindCSS">
+    <SideNav slot="side-panel" />
+    <Post slot="main"/>
+</MainLayout>

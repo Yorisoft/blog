@@ -1,0 +1,16 @@
+---
+import Post from "../layouts/Post.astro"
+//import { Content } from "../content/blog/0.kwin-project-intro/index.md"
+import { getEntry } from 'astro:content';
+import { getEntry, render } from 'astro:content';
+
+const blogPost = await getEntry('blog', '0.kwin-project-intro');
+const { Content } = await blogPost.render();
+
+const props = Astro.props;
+const title = props.title;
+---
+<Post>
+    <p slot="blog-title" htmlFor="title" >Test Title</p>
+    <Content slot="blog" client:load />
+</Post>

@@ -1,16 +1,21 @@
 ---
 import '../styles/global.css';
-const { content } = Astro.props;
+
+const props = Astro.props;
 ---
 
 <html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<title>{content.title}</title>
-	</head>
-	<body>
-		<slot />
-	</body>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width" />
+        <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+        <meta name="generator" content={Astro.generator} />
+        <title>{props.title}</title>
+    </head>
+    <body>
+        <div class="flex h-screen bg-sidebar">
+            <slot name="side-panel"/>
+            <slot name="main"/>
+        </div>
+    </body>
 </html>

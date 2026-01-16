@@ -1,0 +1,30 @@
+---
+import Home from "../layouts/Home.astro"
+import BlogPostCard from "../components/BlogPostCard.astro"
+
+import { Button } from "@/components/ui/button"
+import { Input } from "@/components/ui/input"
+
+{/*fetch blog -->
+for ( blogType blog in blogs) => { -->
+    props.map((blogs) => ( -->
+        <Card class="flex h-40 bg-sky-50"> -->
+            <CardHeader> -->
+                <CardTitle>{blogs.title}</CardTitle> -->
+                <CardDescription> --> 
+                    {blogs.content} -->
+                </CardDescription> -->
+            </CardHeader> -->
+        </Card> -->
+    )) -->
+};
+*/}
+---
+<Home>
+    <Input slot="email-input" type="email" placeholder="Email" />
+    <Button slot="email-button" type="submit" variant="outline">
+        Subscribe
+    </Button>
+    <BlogPostCard slot="blog-posts" />
+</Home>
+

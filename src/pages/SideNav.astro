@@ -7,7 +7,7 @@ import Menu from '../components/Menu.astro'
 import SupportMe from '../components/SupportMe.astro'
 import ThemeToggle from '../components/react/ThemeToggle.tsx'
 
-import { Label } from "../components/ui/label"
+import { Label } from "@/components/ui/label"
 ---
 
 <SideNav id="side-panel">
@@ -24,9 +24,9 @@ import { Label } from "../components/ui/label"
 
     <Menu slot="menu" />
 
-    <Label slot="support-me-label" htmlFor="contact-form" class="mb-5 text-lg font-bold bg-muted-foreground">
+    <p slot="support-me-label" htmlFor="donation-links" class="mb-5 text-xl font-bold bg-muted-foreground">
         Support Me
-    </Label>
+    </p>
     <SupportMe slot="support-me-links" />
 
     <Label slot="theme-label" htmlFor="theme" >Theme</Label>

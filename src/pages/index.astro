@@ -1,27 +1,15 @@
 ---
 import '../styles/global.css';
 // Component Imports
-import Button from '../components/Button.astro';
-import App from '../pages/App.astro';
+import MainLayout from '../layouts/main.astro';
+import Home from '../pages/Home.astro';
 import SideNav from '../pages/SideNav.astro';
 
 // Full Astro Component Syntax:
 // https://docs.astro.build/basics/astro-components/
 ---
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro + TailwindCSS</title>
-	</head>
-
-	<body>
-        <div class="flex h-screen bg-sidebar" client:load >
-            <SideNav client:load />
-            <App client:load />
-        </div>
-	</body>
-</html>
+<MainLayout title="Astro + TailwindCSS"> 
+    <SideNav slot="side-panel" />
+    <Home slot="main" client:load />
+</MainLayout>
