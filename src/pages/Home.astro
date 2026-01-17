@@ -4,6 +4,7 @@ import BlogPostCard from "../components/BlogPostCard.astro"
 
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
+import { Label } from "@/components/ui/label"
 
 import { getCollection } from "astro:content";
 // This looks into src/content/blog/
@@ -11,10 +12,11 @@ const posts = await getCollection('blog');
 ---
 
 <Home>
-    <Input slot="email-input" type="email" placeholder="Email" />
-    <Button slot="email-button" type="submit" variant="outline">
-        Subscribe
-    </Button>
+    <pre slot="welcome_msg" class="text-3xl font-semibold">
+<span class="text-blue-500">do</span> {'{'}
+  <span class="text-[#4EC9B0]">Yorisoft</span>::<span class="text-[#DCDCAA]">things</span>();
+{'};'}
+    </pre>
     {posts.reverse().map((post) => {
         const pubDate = post.data.date
           .toISOString()
