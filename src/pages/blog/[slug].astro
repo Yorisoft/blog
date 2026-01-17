@@ -34,7 +34,7 @@ const { Content } = await post.render();
 const props = Astro.props;
 const title = props.title;
 ---
-<MainLayout title= {`Yorisoft - ${post.data.title}`}>
+<MainLayout title= {`Yorisoft.dev - ${post.data.title}`}>
     <SideNav slot="side-panel" />
     <Post slot="main" >
         <p slot="blog-title">{post.data.title}</p>
