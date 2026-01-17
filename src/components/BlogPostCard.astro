@@ -9,12 +9,14 @@ import {
   CardTitle,
   } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-const { title, authors, pubDate, description, url } = Astro.props;
+const { title, authors, pubDate, description, url, thumbnail } = Astro.props;
 ---
 
-<div class="flex flex-row bg-muted-foreground gap-4">
-    <img class="flex object-cover w-44 h-44 shrink-0 aspect-square bg-destructive-foreground" src="" alt="Blog Image" />
-    <Card class="flex bg-card border-border">
+<div class="flex flex-row items-center gap-4">
+    <img class="flex object-cover w-60 aspect-square"
+         src={thumbnail}
+         alt="Blog Image" />
+    <Card className="flex flex-1 h-55 bg-card border-border">
         <CardHeader>
             <CardTitle>
                 {title}

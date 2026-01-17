@@ -8,7 +8,6 @@ import { Input } from "@/components/ui/input"
 import { getCollection } from "astro:content";
 // This looks into src/content/blog/
 const posts = await getCollection('blog');
-
 ---
 
 <Home>
@@ -16,13 +15,20 @@ const posts = await getCollection('blog');
     <Button slot="email-button" type="submit" variant="outline">
         Subscribe
     </Button>
-    {posts.map((post) => (
-        <BlogPostCard slot="blog-posts" 
-            title={post.data.title}
-            authors={post.data.authors}
-            pubDate={post.data.date}
-            description={post.data.description}
-            url={`/blog/${post.id.split('/')[0]}`}
-        />
-    ))}
+    {posts.reverse().map((post) => {
+        const pubDate = post.data.date
+          .toISOString()
+          .split("T")[0]; 
+
+          return (
+            <BlogPostCard slot="blog-posts" 
+                title={post.data.title}
+                authors={post.data.authors}
+                pubDate={pubDate}
+                description={post.data.description}
+                url={`/blog/${post.id.split('/')[0]}`}
+                thumbnail={post.data.thumbnail}
+            />
+          )
+    })}
 </Home>

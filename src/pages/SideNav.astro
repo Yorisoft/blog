@@ -14,17 +14,17 @@ import { Label } from "@/components/ui/label"
     <h1 slot="name" class="text-2xl font-bold">Yelsin Sepulveda</h1>
     <h1 slot="username" class="font-bold text-l">Yorisoft</h1>
 
-    <img slot="profile-pic" src={profilePic.src} alt="Yorisoft Logo" class="w-40 h-40 bg-sidebar-accent"/>
+    <img slot="profile-pic" src={profilePic.src} alt="Yorisoft Logo" class="w-40 h-40"/>
 
-    <p slot="intro" class="px-3 my-2 text-sm text-center bg-muted-foreground">
+    <p slot="intro" class="px-3 my-2 text-sm text-center">
         Hey, I'm Yorisoft! I love working on free open source software and content that delivers value to people. Welcome!
     </p>
 
     <Socials slot="socials" />
 
-    <Menu slot="menu" />
+    <!-- <Menu slot="menu" /> -->
 
-    <p slot="support-me-label" htmlFor="donation-links" class="mb-5 text-xl font-bold bg-muted-foreground">
+    <p slot="support-me-label" htmlFor="donation-links" class="mb-5 text-xl font-bold">
         Support Me
     </p>
     <SupportMe slot="support-me-links" />

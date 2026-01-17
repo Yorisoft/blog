@@ -4,11 +4,12 @@ discourse: yorisoft
 authors:
   -  yorisoft
 date: 2025-09-15
+thumbnail: /images/kwin_plugin_gamepad_architecture_diagram_3.png
 SPDX-License-Identifier: CC-BY-SA-4.0
 SPDX-FileCopyrightText: 2025 Yelsin Sepulveda <yelsin.sepulveda@kdemail.net>
 ---
 
-# KWin Gamepad Plugin: Weeks 3-4
+# KWin::Plugin::GamePadManager
 
 Picking up from weeks 1+2 ( research + prototypes with libevdev/uinput ), these two past weeks were about moving from “research-only mode” to turning ideas into programming logic that lives inside KWin to: detect gaming controllers and their input events, keeps Plasma awake on controller activity, handles hot-plug and pre-existing connections on startup, and lays down the first mappings from controller input to keyboard/mouse actions without stepping on other apps utilizing the controllers.
 

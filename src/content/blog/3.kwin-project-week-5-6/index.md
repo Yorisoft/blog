@@ -4,6 +4,7 @@ discourse: yorisoft
 authors:
   -  yorisoft
 date: 2025-10-03
+thumbnail: /images/kwin_plugin_gamepad_kcm.png
 SPDX-License-Identifier: CC-BY-SA-4.0
 SPDX-FileCopyrightText: 2025 Yelsin Sepulveda <yelsin.sepulveda@kdemail.net>
 ---

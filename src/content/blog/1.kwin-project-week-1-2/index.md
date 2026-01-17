@@ -3,6 +3,7 @@ title: "GSoC'25 Kwin Project Blog Post: Week 1-2"
 authors:
   -  yorisoft
 date: 2025-06-24
+thumbnail: https://community.kde.org/images.community/thumb/7/79/Mascot_konqi-app-dev.png/250px-Mascot_konqi-app-dev.png
 SPDX-License-Identifier: CC-BY-SA-4.0
 SPDX-FileCopyrightText: 2025 Yelsin Sepulveda <yelsinsepulveda@gmail.com>
 ---
