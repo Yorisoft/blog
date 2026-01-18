@@ -1,4 +1,4 @@
-# Conttributing
+# Contributing
 
 ## 📁 Project Structure
 
