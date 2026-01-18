@@ -12,12 +12,12 @@ The site is built with **Astro** and **Tailwind CSS**, and is primarily used for
 
 ## ✨ Tech Stack
 
-* **Content:** Written in GitHub style Markdown via `md` or `mdx`
-* **Styling:** Tailwind CSS and tailwindprose plugin
-* **Framework:** Astro 5
-* **React** React islands components - interactive UI components only where needed
-* **UI Components:** Shadcn
-* **Language:** TypeScript
+* <img src="https://go-skill-icons.vercel.app/api/icons?i=md" />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  Written in GitHub style Markdown via `.md` or `.mdx`
+* <img src="https://go-skill-icons.vercel.app/api/icons?i=tailwind" />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  Tailwind CSS and tailwindprose plugin
+* <img src="https://go-skill-icons.vercel.app/api/icons?i=astro" />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  Astro 5
+* <img src="https://go-skill-icons.vercel.app/api/icons?i=react" />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  React islands components - interactive UI components only where needed
+* <img src="https://go-skill-icons.vercel.app/api/icons?i=shadcn" />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  Shadcn
+* <img src="https://go-skill-icons.vercel.app/api/icons?i=typescript" />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  TypeScript
 
 ---
 
@@ -114,7 +114,6 @@ Once subscribed, new posts will appear automatically in your reader.
 
 The requirements for my blog are simple:
 
-Use this space to capture:
 - Cost efficient hosting
 - Static Site Generation
 - Ability to generate good SEO
@@ -132,11 +131,12 @@ Check it out: **[https://astro.build](https://astro.build)**
 ---
 ## Contribute  
 
-Check [CONTRIBUTING.md](https://github.com/Yorisoft/yorisoft.github.io/CONTRIBUTING.md) for info on how to contribute. 
+Check [CONTRIBUTING.md](https://github.com/Yorisoft/yorisoft.github.io/blob/main/CONTRIBUTING.md) for info on how to contribute. 
 
 ---
 ## ❤️ Support Me
 
 If you find this site, the writing, or the open-source work behind it useful, consider supporting me.  
 [Support](https://github.com/sponsors/Yorisoft)
+
 
