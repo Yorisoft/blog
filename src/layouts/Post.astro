@@ -1,10 +1,10 @@
 ---
 ---
 <div id="main-panel" class="flex flex-col items-center w-full h-full overflow-auto max-w-none prose prose-lg prose-neutral dark:prose-invert bg-background">
-    <div class="flex justify-center w-full text-5xl font-semibold gap-2">
+    <div class="flex justify-center w-full text-5xl font-semibold gap-2 bg-destructive-foreground">
         <slot name="blog-title" />
     </div>
-    <div class="flex flex-col w-3/5 mb-50 max-w-350" >
+	<div class="flex flex-col w-3/5 pt-8 mb-50 max-w-350" >
         <slot name="blog" />
     </div>
 </div>
