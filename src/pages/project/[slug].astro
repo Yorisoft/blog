@@ -1,0 +1,38 @@
+---
+import ProjectLayout from "../../layouts/Project.astro"
+
+import { getCollection, getEntry } from "astro:content";
+
+// Required for static builds - tells Astro which pages to generate 
+export async function getStaticPaths() {
+    const projects = await getCollection("project");
+    return projects.map((proj) => {
+        // proj.id might be "1.kwin-project-week-1-2/index"
+        // Extract just the folder name
+        const slug = proj.id.split('/')[0];  // Astro 5.x uses 'id' not 'slug'
+        console.log(slug);
+        return { 
+            params: { slug },
+            props: { proj },  // Pass the post as a prop to avoid fetching again
+        };
+    });
+}
+
+// Get the slug from URL params 
+const { slug } = Astro.params;  // Fetch the entry using Astro 5.x API (not getEntryBySlug) 
+const { proj } = Astro.props;  // Handle case where post doesn't exist 
+
+if (!proj) {
+    return Astro.redirect("/404"); 
+}
+
+// Render the markdown content 
+const { Content } = await proj.render();
+
+const props = Astro.props;
+const title = props.title;
+---
+<ProjectLayout slot="main" >
+    <p slot="project-title">{proj.data.title}</p>
+    <Content slot="project" />
+</ProjectLayout> 

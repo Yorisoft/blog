@@ -4,9 +4,16 @@ discourse: yorisoft
 authors:
   -  yorisoft
 date: 2025-09-15
+description: project description foo
+url: https://foo.co
 thumbnail: /images/kwin_plugin_gamepad_architecture_diagram_3.png
-SPDX-License-Identifier: CC-BY-SA-4.0
-SPDX-FileCopyrightText: 2025 Yelsin Sepulveda <yelsin.sepulveda@kdemail.net>
+technologies: 
+    - cpp
+    - java
+    - go
+    - python 
+    - qt
+    - cmake
 ---
 
 # KWin::Plugin::GamePadManager

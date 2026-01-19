@@ -1,9 +1,16 @@
 ---
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faHouse, faUser, faBlog, faEnvelope } from '@fortawesome/free-solid-svg-icons'
+import { faHouse, faUser, faBlog, faEnvelope, faCode } from '@fortawesome/free-solid-svg-icons'
 ---
-<ul class="pl-14 text-md">
-    <li><FontAwesomeIcon icon={faHouse} /> Home </li>
-    <li><FontAwesomeIcon icon={faUser} /> About Me </li>
-    <li><FontAwesomeIcon icon={faEnvelope} /> Contact </li>
+<ul class="flex flex-col gap-4">
+    <li>
+        <a href="/" class="flex flex-row items-center gap-4">
+            <FontAwesomeIcon icon={faBlog} /> Blogs 
+        </a>
+    </li>
+    <li>
+        <a href="/Projects" class="flex flex-row gap-4 items-center">
+            <FontAwesomeIcon icon={faCode} /> Projects
+        </a>
+    </li>
 </ul>

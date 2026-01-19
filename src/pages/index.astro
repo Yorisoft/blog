@@ -1,15 +1,38 @@
 ---
 import '../styles/global.css';
 // Component Imports
-import MainLayout from '../layouts/main.astro';
-import Home from '../pages/Home.astro';
-import SideNav from '../pages/SideNav.astro';
+import HomeLayout from '../layouts/Home.astro';
+import BlogPostCard from "../components/BlogPostCard.astro"
+
+import { getCollection } from "astro:content";
+// This looks into src/content/blog/
+const posts = await getCollection('blog');
 
 // Full Astro Component Syntax:
 // https://docs.astro.build/basics/astro-components/
 ---
 
-<MainLayout title="Yorisoft.dev">
-    <SideNav slot="side-panel" />
-    <Home slot="main" />
-</MainLayout>
+
+<HomeLayout slot="main" title="Yorisoft.dev">
+    <pre slot="welcome_msg" class="text-3xl font-semibold -translate-x-25">
+        <span class="text-blue-500">do</span> {'{'}
+          <span class="text-[#4EC9B0]">Yorisoft</span>::<span class="text-[#DCDCAA]">things</span>();
+        {'};'}
+    </pre>
+    {posts.reverse().map((post) => {
+        const pubDate = post.data.date
+          .toISOString()
+          .split("T")[0]; 
+
+          return (
+            <BlogPostCard slot="blog-posts" 
+                title={post.data.title}
+                authors={post.data.authors}
+                pubDate={pubDate}
+                description={post.data.description}
+                url={`/blog/${post.id.split('/')[0]}`}
+                thumbnail={post.data.thumbnail}
+            />
+          )
+    })}
+</HomeLayout>

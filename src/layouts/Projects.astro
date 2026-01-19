@@ -1,11 +1,37 @@
 ---
----
-<div id="main-panel" class="flex flex-col items-center w-full h-full overflow-auto bg-background">
-    <div class="flex justify-center w-full p-8 bg-destructive-foreground dark:prose-invert">
-        <slot name="welcome_msg" class="-translate-x-20"/>
-    </div>
-    <div class="flex flex-col w-3/5 pt-8 prose prose-lg prose-neutral dark:prose-invert max-w-350 gap-8 mb-50">
-        <slot name="project-posts" />
-    </div>
-</div>
+import '../styles/global.css';
 
+import SideNav from '../components/SideNav.astro';
+
+const props = Astro.props;
+---
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width" />
+        <link rel="icon" type="image/svg+xml" href="/logoIcon.png" />
+        <link rel="alternate" type="application/rss+xml" title="Yorisoft.dev RSS Feed" href={new URL("rss.xml", Astro.site)} />
+        <meta name="generator" content={Astro.generator} />
+        <script is:inline>
+            // Runs before page renders to prevent flash
+            document.documentElement.classList.add("dark")
+        </script>
+        <title>{props.title}</title>
+    </head>
+    <body>
+        <div class="flex h-screen bg-sidebar">
+            <!-- <slot name="side-panel"/> -->
+            <!-- <slot name="main"/> -->
+            <SideNav />
+            <div id="main-panel" class="flex flex-col w-full h-full overflow-auto bg-background">
+                <div class="flex justify-center w-full bg-destructive-foreground text-lg p-10">
+                    <slot name="welcome_msg" class="-translate-x-20"/>
+                </div>
+                <div class="mx-auto grid grid-cols-1 lg:grid-cols-2 gap-8 w-full max-w-11/12 pt-8 mb-40">
+                    <slot name="project-posts" />
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

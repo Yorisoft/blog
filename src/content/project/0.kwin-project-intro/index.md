@@ -3,9 +3,16 @@ title: GSoC 2025 Project Blog Intro - Improving Game Controller Support in KWin
 authors:
   -  yorisoft
 date: 2025-05-12
-thumbnail: https://community.kde.org/images.community/thumb/a/af/Mascot_konqi-base-plasma.png/250px-Mascot_konqi-base-plasma.png
-SPDX-License-Identifier: CC-BY-SA-4.0
-SPDX-FileCopyrightText: 2025 Yelsin Sepulveda <yelsin.sepulveda@kdemail.net>
+description: project description - foo
+url: https://foo.co
+thumbnail: https://foo.png
+technologies: 
+    - cpp
+    - java
+    - go
+    - python 
+    - qt
+    - cmake
 ---
 
 # Hello KDE Community! 

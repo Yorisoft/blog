@@ -3,9 +3,16 @@ title: "GSoC'25 Kwin Project Blog Post: Week 1-2"
 authors:
   -  yorisoft
 date: 2025-06-24
+description: project description foo
+url: https://foo.co
 thumbnail: /images/games.svg
-SPDX-License-Identifier: CC-BY-SA-4.0
-SPDX-FileCopyrightText: 2025 Yelsin Sepulveda <yelsinsepulveda@gmail.com>
+technologies: 
+    - cpp
+    - java
+    - go
+    - python 
+    - qt
+    - cmake
 ---
 
 These past few week’s my focus was on exploring input device detection and event handling mechanisms in Linux, with a particular emphasis on game controllers and their potential integration into KWin. 

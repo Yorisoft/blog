@@ -2,7 +2,7 @@
 import { Label } from "../components/ui/label"
 ---
 
-<div id="side-panel" class="flex flex-col items-center w-full h-screen overflow-auto max-w-65 bg-sidebar">
+<div id="side-panel" class="flex flex-col items-center w-full overflow-auto max-w-70 bg-sidebar">
     <div class="flex flex-col items-center py-2">
         <slot name="name" />
         <slot name="username" />
@@ -16,7 +16,7 @@ import { Label } from "../components/ui/label"
         <slot name="socials" />
     </div>
 
-    <div class="w-4/5 text-md">
+    <div class="w-4/5 pl-15 mt-10 text-lg">
         <slot name="menu" />
     </div>
 

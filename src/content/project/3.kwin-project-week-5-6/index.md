@@ -4,9 +4,16 @@ discourse: yorisoft
 authors:
   -  yorisoft
 date: 2025-10-03
+description: project description foo
+url: https://foo.co
 thumbnail: /images/kwin_plugin_gamepad_kcm.png
-SPDX-License-Identifier: CC-BY-SA-4.0
-SPDX-FileCopyrightText: 2025 Yelsin Sepulveda <yelsin.sepulveda@kdemail.net>
+technologies: 
+    - cpp
+    - java
+    - go
+    - python 
+    - qt
+    - cmake
 ---
 
 It's been another few weeks of progress on the KWin GameController Plugin and I've got a lot to share! After spending the previous weeks setting up the foundation, I've progressed things forward by improving the logic a bit more, creating a few integration tests, integrating it into System Settings, and making sure it runs well on real hardware like the steamdeck.

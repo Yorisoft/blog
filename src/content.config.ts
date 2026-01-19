@@ -20,7 +20,7 @@ const project = defineCollection({
     description: z.string(),
     url: z.string(),
     thumbnail: z.string(),
-    techList: z.string(),
+    technologies: z.string().array(),
   }),
 });
 
