@@ -5,8 +5,6 @@ It’s used for technical blogging, project write-ups, and long-form engineering
 
 The design of this site is inspired by [W3’s free portfolio website](https://themes.3rdwavemedia.com/devcard/bs5/index.html), which served as an early reference for layout and information hierarchy. From there, the design was adapted and reworked to better support my needs, such as cheap hosting, SGG, and SEO.
 
-The site is built with **Astro** and **Tailwind CSS**, and is primarily used for technical blogging, project logs, and gaming related escapades.
-
 🌐 **Live site:** [http://yorisoft.github.io/](http://yorisoft.github.io/)
 
 ---
@@ -35,6 +33,7 @@ src/
 ├── pages/             # Route-based pages
 ├── content/
 │   └── blog/          # Markdown blog posts
+│   └── project/       # Markdown project page
 ├── styles/            # Global styles
 public/
 └── images/            # Static assets (thumbnails, media)
@@ -133,5 +132,3 @@ Check it out: **[https://astro.build](https://astro.build)**
 
 If you find this site, the writing, or the open-source work behind it useful, consider supporting me.  
 [Support](https://github.com/sponsors/Yorisoft)
-
-
