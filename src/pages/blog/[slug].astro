@@ -1,7 +1,7 @@
 ---
-import MainLayout from '../../layouts/main.astro';
+import BlogLayout from '../../layouts/Blog.astro';
 import Post from "../../layouts/Post.astro"
-import SideNav from "../SideNav.astro"
+import SideNav from "../../components/SideNav.astro"
 
 import { getCollection, getEntry } from "astro:content";
 
@@ -34,10 +34,7 @@ const { Content } = await post.render();
 const props = Astro.props;
 const title = props.title;
 ---
-<MainLayout title= {`Yorisoft.dev - ${post.data.title}`}>
-    <SideNav slot="side-panel" />
-    <Post slot="main" >
-        <p slot="blog-title">{post.data.title}</p>
-        <Content slot="blog" />
-    </Post> 
-</MainLayout>
+<BlogLayout title= {`Yorisoft.dev - ${post.data.title}`}>
+    <p slot="blog-title">{post.data.title}</p>
+    <Content slot="blog" />
+</BlogLayout>
