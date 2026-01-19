@@ -51,6 +51,7 @@ Blog posts are written in Markdown and validated using Astro Content Collections
 ### frontmatter
 
 ```yaml
+// Blogs
 ---
 title: string
 authors: array
@@ -58,32 +59,43 @@ pubDate: ISO date
 description: string 
 thumbnail: string
 url: string
+
+
+// Projects
+title: string
+authors: array
+date: ISO date
+description: string
+url: string
+thumbnail: string
+technologies: array 
 ---
 
 // Example
 
 ---
-title: "GSoC’25 KWin Project Blog Post: Week 3–4"
+title: "Blog Title: foo"
 authors: ["yorisoft"]
 pubDate: 2025-09-15
-description: "Turning research into real KWin logic"
-url: "https://external-link-if-needed"
-thumbnail: "/images/kwin-week-3-4.png"
+description: "foo"
+url: "https://foo.co"
+thumbnail: "/images/foo.png"
+
+
+
+title: "Project Title: foo"
+authors: ["yorisoft"]
+date: 2025-01-10
+description: "foo"
+url: "foo.co"
+thumbnail: "/images/foo.png"
+technologies: 
+    - js
+    - nodejs
+    - docker
 ---
 
 ```
-
-**Required**
-
-* `title`
-* `pubDate`
-* `authors`
-
-**Optional**
-
-* `description`
-* `thumbnail`
-* `url` 
 
 Each post automatically:
 
