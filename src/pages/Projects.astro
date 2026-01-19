@@ -24,7 +24,7 @@ const projects = await getCollection('project');
           .split("T")[0]; 
 
           return (
-            <ProjectEntryCard slot="project-posts" client:load 
+            <ProjectEntryCard slot="project-posts" 
                 title={project.data.title}
                 pubDate={pubDate}
                 description={project.data.description}
