@@ -24,11 +24,12 @@ const projects = await getCollection('project');
           .split("T")[0]; 
 
           return (
-            <ProjectEntryCard slot="project-posts" 
+            <ProjectEntryCard slot="project-posts" client:load 
                 title={project.data.title}
                 pubDate={pubDate}
                 description={project.data.description}
                 url={`/project/${project.id.split('/')[0]}`}
+                projURL={project.data.url}
                 thumbnail={project.data.thumbnail}
                 technologies={project.data.technologies}
             />
