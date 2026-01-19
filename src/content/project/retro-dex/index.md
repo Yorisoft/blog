@@ -5,7 +5,7 @@ authors:
 date: 2024-01-19
 description: A Pokedex app built from scratch for MiyooMini 
 url: https://github.com/Yorisoft/pokedex_miyoo
-thumbnail: https://github.com/user-attachments/assets/7080b6cd-66a1-4a10-88d9-bf5364bdd3cc
+thumbnail: /images/retrodex_thumnail.png
 technologies: 
     - cpp
     - cmake
