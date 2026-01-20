@@ -3,7 +3,12 @@ import '../styles/global.css';
 
 // Component Imports
 import ResumeLayout from "../layouts/Resume.astro"
-import * as resume from "../markdown/resume.md"
+import {Content as Header} from '../components/resume/Header.md';
+import {Content as Experience} from '../components/resume/Professional_Experience.md';
+import {Content as Projects} from '../components/resume/Personal_Projects.md';
+import {Content as Skills} from '../components/resume/Skills.md';
+import {Content as Certs} from '../components/resume/Certifications.md';
+import Socials from '../components/resume/Socials.astro';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faAt } from '@fortawesome/free-solid-svg-icons'
@@ -15,7 +20,12 @@ import {faSquareGitlab, faSquareGithub, faSquareLinkedin} from '@fortawesome/fre
 
 <ResumeLayout slot="main" >
     <p slot="title">Resume</p>
-    <div set:html={await resume.compiledContent()} slot="resume"/>
+    <Header slot="header" />
+    <Socials slot="socials" />
+    <Experience slot="experience" />
+    <Projects slot="projects" />
+    <Skills slot="skills" />
+    <Certs slot="certs" />
     <p slot="footer" class="flex items-center gap-2">
         Made wih ❤️ and <img class="w-8" src={`https://go-skill-icons.vercel.app/api/icons?i=astro`} />
     </p>
