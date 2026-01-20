@@ -1,0 +1,18 @@
+---
+import '../styles/global.css';
+
+// Component Imports
+import ResumeLayout from "../layouts/Resume.astro"
+import * as resume from "../markdown/resume.md"
+
+// Full Astro Component Syntax:
+// https://docs.astro.build/basics/astro-components/
+---
+
+<ResumeLayout slot="main" >
+    <p slot="title">Resume</p>
+    <div set:html={await resume.compiledContent()} slot="resume"/>
+    <p slot="footer" class="flex items-center gap-2">
+        Made wih ❤️ and <img class="w-8" src={`https://go-skill-icons.vercel.app/api/icons?i=astro`} />
+    </p>
+</ResumeLayout>

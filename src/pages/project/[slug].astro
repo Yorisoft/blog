@@ -35,4 +35,7 @@ const title = props.title;
 <ProjectLayout slot="main" >
     <p slot="project-title">{proj.data.title}</p>
     <Content slot="project" />
+    <p slot="footer" class="flex items-center gap-2">
+        Made wih ❤️ and <img class="w-8" src={`https://go-skill-icons.vercel.app/api/icons?i=astro`} />
+    </p>
 </ProjectLayout> 
