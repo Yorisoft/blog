@@ -18,7 +18,9 @@ const projects = await getCollection('project');
           <span class="text-[#4EC9B0]">Yorisoft</span>::<span class="text-[#DCDCAA]">things</span>();
         {'};'}
     </pre>
-    {projects.reverse().map((project) => {
+    {projects
+        .toSorted((a, b) => b.data.date - a.data.date)
+        .map((project) => {
         const pubDate = project.data.date
           .toISOString()
           .split("T")[0]; 

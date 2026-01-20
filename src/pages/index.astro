@@ -19,10 +19,12 @@ const posts = await getCollection('blog');
           <span class="text-[#4EC9B0]">Yorisoft</span>::<span class="text-[#DCDCAA]">things</span>();
         {'};'}
     </pre>
-    {posts.reverse().map((post) => {
+    {posts
+	.toSorted((a, b) => b.data.date - a.data.date)
+        .map((post) => {
         const pubDate = post.data.date
-          .toISOString()
-          .split("T")[0]; 
+            .toISOString()
+            .split("T")[0]; 
 
           return (
             <BlogPostCard slot="blog-posts" 
