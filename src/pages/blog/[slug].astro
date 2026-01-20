@@ -37,4 +37,7 @@ const title = props.title;
 <BlogLayout title= {`Yorisoft.dev - ${post.data.title}`}>
     <p slot="blog-title">{post.data.title}</p>
     <Content slot="blog" />
+    <p slot="footer" class="flex items-center gap-2">
+        Made wih ❤️ and <img class="w-8" src={`https://go-skill-icons.vercel.app/api/icons?i=astro`} />
+    </p>
 </BlogLayout>

@@ -1,0 +1,87 @@
+---
+title: Resume
+---
+
+
+<div class="text-center">
+
+# Yelsin Tomas Sepulveda
+
+### **Software Engineer | Cloud DevOps**  
+
+</div>
+
+<i class="fa-solid fa-envelope"></i>
+<a href="mailto:YelsinSepulveda@gmail.com">YelsinSepulveda@gmail.com</a> ·
+<i class="fa-brands fa-github"></i> GitHub ·
+<i class="fa-brands fa-gitlab"></i> GitLab ·
+<i class="fa-brands fa-linkedin"></i>
+<a href="https://linkedin.com/in/yelsin-sepulveda-lara">LinkedIn</a>
+
+## Experience
+
+### KDE — GSoC’25 Contributor
+**June 2025 – Present · Remote**
+
+- Submitted proposal and was accepted to develop gaming controller support in Plasma Desktop through **KWin**, addressing a long-standing system suspension issue and adding basic system navigation.
+- Implemented the solution using **C++**, **Qt Framework**, **CMake**, **KDE Frameworks**, and the **Linux Kernel Input Subsystem API**.
+- Collaborate closely with KDE/KWin maintainers and mentors throughout development lifecycles, participate in code reviews, technical discussions on Matrix channels, and publish public blog posts.
+
+---
+
+### Amazon Web Services — SDE DevOps, Innovation Engineering
+**Sep 2023 – June 2024 · Remote**
+
+- Developed and refactored multi-stage CI/CD pipelines, reducing pipeline execution time by **40%** (~30 min → ~18 min) and improving infrastructure maintainability using **CloudFormation**, **CDK**, **CodePipeline**, **TypeScript**, **ECS**, **EKS**, and **Docker**.
+- Built **15+ reusable CDK L3 constructs**, encapsulating resources such as VPN, S3, EC2, ECS, RDS, and networking for *Marshall* (internal web platform), significantly reducing configuration complexity and drift.
+
+---
+
+### Amazon Web Services — Solutions Architect (Intern → Associate)
+**Jan 2021 – Sep 2023 · Arlington, VA**
+
+- Created User Acceptance Test documentation, automated tests, and reporting for the **AWS Secure Environment Accelerator**, validating expected security controls using **Python**, `unittest`, and **Boto3**.
+- Developed deep technical expertise across core AWS services including **EC2**, **Lambda**, **S3**, **RDS**, **VPC**, **CloudFormation**, **IAM**, and **CloudWatch**, following the AWS Well-Architected Framework.
+- Architected AWS environments for public sector and enterprise customers, advising on least-privilege IAM, encryption, backups, networking, and the Shared Responsibility Model.
+- Supported executive demos and client workshops, translating complex architectures into actionable business insights.
+
+---
+
+### AthenaHealth — NE1 Intern, Platform Services
+**June 2020 – May 2021 · Watertown, MA**
+
+- Developed new infrastructure for **Okta authentication resources**, converting imperative JavaScript scripts into a declarative **Terraform**-based system.
+- Created a CI/CD pipeline using **Jenkins** and **Docker**, automating code fetch, Puppeteer smoke tests, and deployment to AWS EC2.
+- Worked within a Scrum team following Agile workflows, including daily standups, Jira ticketing, bi-weekly sprints, and retrospectives.
+
+---
+
+## Personal Projects
+
+### Open Source Contributor — KDE (2025)
+- Contributions to **Angelfish**, **KWin**, and **Plasma Desktop**
+  *Technologies:* C++, Qt, CMake
+
+### Retrodex Miyoo — Pokédex App (2024)
+- Pokédex application for **Onion-OS** on gaming handhelds using the `miyoomini-toolchain`
+  *Technologies:* C++, SDL, CMake
+
+---
+
+## Skills
+
+- **Languages:** C, C++, Go, Java, Python, TypeScript, JavaScript
+- **Cloud & Infrastructure:** AWS (ECS, EKS, Lambda, CDK, CloudFormation), Docker, Kubernetes, Terraform, Grafana, Prometheus
+- **Tools:** React, Node.js, Qt, CMake, Jenkins, Git, Linux
+
+---
+
+## Certifications
+
+- AWS Certified Cloud Practitioner — J3W7057DJERE1WSZ
+- AWS Certified Solutions Architect – Associate — MMWL2GE2WEBEQH58
+- AWS Certified Developer – Associate — MEGK0X01XNREQCWW
+
+---
+
+**Languages:** Native bilingual — English & Spanish
