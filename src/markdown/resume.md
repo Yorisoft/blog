@@ -2,11 +2,21 @@
 title: Resume
 ---
 
+
+<div class="text-center">
+
 # Yelsin Tomas Sepulveda
 
-**Software Engineer | Cloud DevOps**
-Milton, MA · (857) 321-1238
-📧 YelsinSepulveda@gmail.com · 🌐 blog.yorisoft.dev · GitHub · GitLab · LinkedIn linkedin.com/in/yelsin-sepulveda-lara
+### **Software Engineer | Cloud DevOps**  
+
+</div>
+
+<i class="fa-solid fa-envelope"></i>
+<a href="mailto:YelsinSepulveda@gmail.com">YelsinSepulveda@gmail.com</a> ·
+<i class="fa-brands fa-github"></i> GitHub ·
+<i class="fa-brands fa-gitlab"></i> GitLab ·
+<i class="fa-brands fa-linkedin"></i>
+<a href="https://linkedin.com/in/yelsin-sepulveda-lara">LinkedIn</a>
 
 ## Experience
 
