@@ -5,7 +5,7 @@ It’s used for technical blogging, project write-ups, and long-form engineering
 
 The design of this site is inspired by [W3’s free portfolio website](https://themes.3rdwavemedia.com/devcard/bs5/index.html), which served as an early reference for layout and information hierarchy. From there, the design was adapted and reworked to better support my needs, such as cheap hosting, SGG, and SEO.
 
-🌐 **Live site:** [http://yorisoft.github.io/](http://yorisoft.github.io/)
+🌐 **Live site:** [https://blog.yorisoft.dev/](https://blog.yorisoft.dev/)
 
 ---
 
